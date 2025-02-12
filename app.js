@@ -16,4 +16,5 @@ app.delete('/products/:id', api.deleteProduct)
 app.put('/products/:id', api.updateProduct)
 app.use(middleware.handleError)
 app.use(middleware.notFound)
+
 app.listen(port, () => console.log("Server listening on port ${port}"))
